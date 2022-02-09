@@ -3,17 +3,14 @@ import './App.scss';
 import './styles/general.scss';
 import { TodoList } from './components/TodoList';
 import { CurrentUser } from './components/CurrentUser';
-import { Todo } from './react-app-env.d';
 
 type State = {
   selectedUserId: number,
-  todos: Todo[],
 };
 
 class App extends React.Component<{}, State> {
   state: State = {
     selectedUserId: 0,
-    todos: [],
   };
 
   selectUserId = (userId: number) => {
